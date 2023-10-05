@@ -3,9 +3,10 @@ import sys
 num_args = len(sys.argv) - 1
 
 if num_args == 0:
-    print("0 args.")
-    print(".")
+    print("0 arguments.")
+elif num_args == 1:
+    print("1 argument:")
 else:
-    print("{}args{}:".format(num_args, "s" if num_args > 1 else ""))
-    for index, arg in enumerate(sys.argv[1:], start=1):
-        print("{}: {}".format(index, arg))
+    print("{}arguments:".format(num_args))
+    for i in range(num_args):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
