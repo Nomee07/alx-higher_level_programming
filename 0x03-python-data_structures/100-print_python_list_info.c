@@ -1,14 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include <Python.h>
+#include <object.h>
 #include <listobject.h>
-
-/**
- * print_python_list_info - Print some basic info about Python lists
- * @p: PyObject
- *
- * Return: Nothing
- */
 
 void print_python_list_info(PyObject *p)
 {
