@@ -5,11 +5,14 @@
 
 
 class Square:
+    """Represents a square."""
+
+
     def __init__(self, size=0):
         """Initializes a new squar instance.
 
         Args:
-        size (int, optional): The size of the square, deault is 0.
+            size (int, optional): The size of the square, deault is 0.
         """
 
         if not isinstance(size, int):
@@ -20,5 +23,4 @@ class Square:
 
     def area(self):
         """Return the current area of the square."""
-
         return (self.__size * self.__size)
