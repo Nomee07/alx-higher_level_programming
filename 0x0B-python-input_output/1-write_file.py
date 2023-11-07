@@ -12,10 +12,5 @@ def write_file(filename="", text=""):
         text (str): The string to be written to the file.
 
     """
-    try:
-        with open(filename, "w", encoding="utf-8") as file:
-            num_chars_written = file.write(text)
-        return num_chars_written
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return 0
+    with open(filename, "w", encoding="utf-8") as file:
+        return file.write(text)
